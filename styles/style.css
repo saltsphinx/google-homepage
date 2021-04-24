@@ -1,9 +1,17 @@
 html,
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   background: #202124;
   color: #bdc1c6;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 a {
@@ -17,21 +25,23 @@ nav {
 }
 
 .nav-links {
+  display: flex;
+  gap: 12px;
   list-style-type: none;
   width: fit-content;
   margin: 5px 0;
-  padding: 0;
+  padding: 10px;
   overflow: hidden;
 }
 
-.nav-links-two {
+.nav-links-one {
   display: flex;
   align-items: center;
 }
 
 .nav-links > li {
   display: inline;
-  margin: 0 5px;
+  margin: 0;
 }
 
 .nav-links-two-img {
@@ -94,4 +104,32 @@ main {
 
 .button-1:hover {
   outline: 1px solid #bdc1c6;
+}
+
+footer {
+  background: #171717;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+  list-style-type: none;
+  width: fit-content;
+  margin: 5px;
+  padding: 10px;
+}
+
+.footer-links > li {
+  display: inline;
+}
+
+.footer-links,
+.footer-links > li > a {
+  color: #999da2;
+}
+
+link:hover {
+  text-decoration: underline;
 }
